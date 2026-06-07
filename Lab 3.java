@@ -64,4 +64,7 @@ int index = match(text, bestCase);
   }
 }
 
-//* 1. 
+//* 1. The brute-force string matching algorithm has a time complexity of 0(nm).
+//* 2. Yes. the worst-case input took longer since the algorithm had to do more comparsions.
+//* 3. the purpose is to show how different inputs can affect the algorithm's performance and relate to that big O notation.
+//* 4. No. This only show's possible best- and worst-case inputs for this example, not every single possible case.
