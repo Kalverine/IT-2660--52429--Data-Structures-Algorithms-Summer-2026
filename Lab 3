@@ -63,3 +63,5 @@ int index = match(text, bestCase);
     return true;
   }
 }
+
+//* 1. 
