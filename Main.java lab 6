@@ -1,6 +1,10 @@
 class Main {
   public static void main(String[] args) {
     // Use the instructions in Blackboard or instructions.md to complete Lab 6
-    
+    MyMap<String, Integer> map = new MyHashMap<>();
+    map.put("Smith", 30);
+    map.put("Anderson", 31);
+    System.out.println("Entries: " + map);
+    System.out.println("Lewis age: " + map.get(("Lewis"));
   }
 }
