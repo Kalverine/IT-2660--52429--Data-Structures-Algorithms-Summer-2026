@@ -7,9 +7,9 @@ class Main {
     
     // 2-Define Edges
     int [][] edges = {
-      {0,1}, {1,0}, {0,7}, {7,0}, {1,2} {2,1}, {1,5}, {5,1}, {1,6}. {6,1}, {1,7}, {7,1}
+      {0,1}, {1,0}, {0,7}, {7,0}, {1,2}, {2,1}, {1,5}, {5,1}, {1,6}, {6,1}, {1,7}, {7,1},
       {2,3}, {3,2}, {2,4}, {4,2}, {4,5}, {5,4}, {5,6}, {6,5}, {6,7}, {7,6}
-    
+    };
     // 3. Create the graph (name "graph") using the vertices and edges
         UnweightedGraph<String> graph = new UnweightedGraph<>(vertices, edges);
       
@@ -21,8 +21,9 @@ class Main {
       
     // 6. Print the parent-child relationships for each vertex during the DFS traversal
       System.out.println("\nParent-Child Relationships:");
-      for (int i = o; i < vertices.length; i++) {
+      for (int i = 0; i < vertices.length; i++) {
         System.out.println(vertices[i] + " -> Parent: " + (dfs.getParent(i) != -1 ? vertices[dfs.getParent(i)] : "None"));
+      }
     // 7. Call the printPath method (assuming this method exists in the UnweightedGraph class)
         System.out.println("\nPaths from Business & Technology:");
         System.out.print("To Health Tech Center: "); dfs.printPath(3); System.out.println();
